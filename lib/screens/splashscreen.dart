@@ -1,3 +1,5 @@
+import 'package:expence_tracker/screens/addname.dart';
+import 'package:expence_tracker/utils/route_name.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -94,7 +96,10 @@ class SplashScreen extends StatelessWidget {
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all(Color(0xffffb59a)),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, RouteNames.namescreen);
+           
+            },
             child: Text(
               'Get Started',
               style: TextStyle(color: Color(0xff201B18)),
