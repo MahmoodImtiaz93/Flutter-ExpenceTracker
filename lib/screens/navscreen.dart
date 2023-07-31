@@ -8,6 +8,8 @@ class NavScreen extends StatefulWidget {
 }
 
 class _NavScreenState extends State<NavScreen> {
+    int index = 0;
+    //GlobalKey<BottomNavigationBar> _bottomNavigationKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Container();
